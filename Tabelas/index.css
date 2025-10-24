@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(205, 205, 252);
+}
+
+table {
+    background-color: rgb(246, 181, 132);
+    color: rgb(15, 0, 0);
+    border-color: rgb(174, 0, 255);
+    border-width: 3px;
+}

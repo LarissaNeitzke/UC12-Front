@@ -1,3 +1,137 @@
+<!-- Tabela de Filmes
+Crie uma tabela com pelo menos 4 filmes. Cada filme deve ter:
+
+Nome
+Ano de lançamento
+Gênero
+Nota (de 0 a 10)
+Inclua cabeçalho (<thead>) e corpo (<tbody>). -->
+  
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <h2>Filmes</h2>
+        <table border="1" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Ano Lançamento</th>
+                    <th>Gênero</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>Harry Potter e a Pedra Filosofal</td>
+                    <td>2001</td>
+                    <td>Fantasia</td>
+                    <td>10.0/10.0</td>
+                </tr>
+                <tr>
+                    <td>Harry Potter e a Câmara Secreta</td>
+                    <td>2002</td>
+                    <td>Fantasia</td>
+                    <td>9.5/10.0</td>
+                </tr>
+                <tr>
+                    <td>Harry Potter e o Prisioneiro de Azkaban</td>
+                    <td>2004</td>
+                    <td>Fantasia</td>
+                    <td>9.4/10.0</td>
+                </tr>
+                <tr>
+                    <td>Harry Potter e o Cálice de Fogo</td>
+                    <td>2005</td>
+                    <td>Fantasia</td>
+                    <td>10.0/10.0</td>
+                </tr>  
+            </tbody>
+    
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: center;">Fim da lista.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+
+
+
+  <!-- Tabela de Horários de Aulas
+  Monte uma tabela que simule os horários de uma turma com:
+  
+  Dias da semana
+  Matérias
+  Horário de início e fim
+  Inclua também um rodapé (<tfoot>) indicando o total de horas da semana. -->
+
+    <section>
+      <h2>Grade Escolar</h2>
+
+      <table border="1" style="border-collapse: collapse;">
+          <thead>
+              <tr>
+                  <th>Horário</th>
+                  <th>Dias da Semana</th>
+                  <th>Matérias</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <tr>
+                  <td>09:00</td>
+                  <td>Segunda</td>
+                  <td>História</td>
+              </tr>
+
+              <tr>
+                <td>10:00</td>
+                <td>Terça</td>
+                <td>Artes</td>
+            </tr>
+
+            <tr>
+                <td>11:00</td>
+                <td>Quarta</td>
+                <td>Portugês</td>
+            </tr>
+
+            <tr>
+                <td>12:00</td>
+                <td>Quinta</td>
+                <td>Inglês</td>
+            </tr>
+
+            <tr>
+                <td>10:30</td>
+                <td>Sexta</td>
+                <td>Matemática</td>
+            </tr>
+             
+          </tbody>
+      </table>
+  </section>
+
+
+
+<!-- Tabela de Lista de Compras
+Crie uma tabela com:
+
+Item
+Quantidade
+Preço unitário
+Preço total do item
+No rodapé some todos os preços para mostrar o valor total da compra. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,43 +141,59 @@
 </head>
 <body>
 
-    <h2>🏆 Ranking de Vendas</h2>
+    <section>
+        <h2>Lista de Compras</h2>
 
-<table border="1" style="border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="background-color: lightgray;">Posição</th>
-      <th style="background-color: lightgray;">Vendedor</th>
-      <th style="background-color: lightgray;">Vendas</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-        <tr style="background-color: rgb(105, 163, 210);">
-      <td>1º</td>
-      <td>Maria</td>
-      <td>150</td>
-    </tr>
-    
-        <tr style="background-color: rgb(105, 116, 235);">
-      <td>2º</td>
-      <td>João</td>
-      <td>120</td>
-    </tr>
-   
-        <tr style="background-color: rgb(105, 163, 210);">
-      <td>3º</td>
-      <td>Pedro</td>
-      <td>100</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="2" style="text-align: right;">Total</td>
-      <td>750</td>
-    </tr>
-  </tfoot>
-</table>
+        <table border="1" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Preço Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Café</td>
+                    <td>2</td>
+                    <td>R$10,00</td>
+                    <td>R$20,00</td>
+                </tr>
+
+                <tr>
+                    <td>Água</td>
+                    <td>5</td>
+                    <td>R$5,00</td>
+                    <td>R$25,00</td>
+                </tr>
+
+                <tr>
+                    <td>Refrigerante</td>
+                    <td>2</td>
+                    <td>R$12.00</td>
+                    <td>R$24,00</td>
+                </tr>
+
+                <tr>
+                    <td>Suco</td>
+                    <td>1</td>
+                    <td>R$8.00</td>
+                    <td>R$8,00</td>
+                </tr>
+
+               
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Preço Total da Compra:</td>
+                    <td>R$77,00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
 
 </body>
 </html>
