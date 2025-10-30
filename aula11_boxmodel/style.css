@@ -1,0 +1,73 @@
+#caixa1, #caixa2, #caixa3 {
+    display: block;
+    margin: 10px;
+    padding: 15px;
+    border: 3px solid #333;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #caixa1 {
+    width: 200px;
+    height: 100px;
+    background-color: #ffb366;
+  }
+  
+  #caixa2 {
+    width: 250px;
+    height: 120px;
+    background-color: #66b3ff;
+    box-sizing: border-box; /* pra comparar o efeito */
+  }
+  
+  #caixa3 {
+    width: 300px;
+    height: 140px;
+    background-color: #66cc99;
+  }
+  
+  .caixas-inline #caixa1, 
+  .caixas-inline #caixa2, 
+  .caixas-inline #caixa3 {
+    display: inline-block;
+  }
+  
+
+  p, span, div {
+    border: 1px solid #555;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  /* DIFERENTES DISPLAYS
+  p { display: block; }
+  span { display: inline; }
+  div { display: inline-block; }
+  */
+  
+ 
+  .card {
+    width: 250px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    margin: 10px 0 5px;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 14px;
+  }
