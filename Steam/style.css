@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background-color: #0d1117;
+    color: #fff;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171a21;
+    padding: 10px 30px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    color: #c7d5e0;
+    letter-spacing: 1px;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #c7d5e0;
+    font-weight: bold;
+  }
+  
+  .main-nav a:hover {
+    color: #fff;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .install-btn {
+    background-color: #5c7e10;
+    border: none;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .install-btn:hover {
+    background-color: #7fa31a;
+  }
+  
+  .actions a {
+    color: #c7d5e0;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+
+  .sub-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a475e;
+    padding: 10px 30px;
+  }
+  
+  .sub-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .sub-nav a {
+    color: #c7d5e0;
+    text-decoration: none;
+  }
+  
+  .sub-nav a:hover {
+    color: #fff;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #1b2838;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .search-box input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    outline: none;
+  }
+  
+  .search-box button {
+    background-color: #66c0f4;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+
+  .highlight {
+    padding: 30px;
+  }
+  
+  .highlight-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #c7d5e0;
+    text-transform: uppercase;
+  }
+  
+  .card {
+    display: flex;
+    background-color: #1c2531;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  }
+  
+  .card .main-img {
+    width: 60%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .card .main-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-info h3 {
+    font-size: 1.6em;
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+  
+  .card-info p {
+    margin-bottom: 10px;
+    color: #c7d5e0;
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .gallery img {
+    width: 90px;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  .status {
+    font-size: 1.1em;
+  }
+  
+  .tag {
+    background-color: #2a475e;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    display: inline-block;
+    margin: 6px 0;
+  }
+  
+  .free {
+    color: #ffd700;
+    font-weight: bold;
+  }
+
+  @media (max-width: 900px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .card .main-img {
+      width: 100%;
+    }
+  
+    .gallery img {
+      width: 80px;
+    }
+  
+    .sub-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .search-box {
+      width: 100%;
+    }
+  }
+  
